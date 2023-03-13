@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20% 15% 5% 15%;
+  
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    color: white;
+    padding: 45px;
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+    color: white;
+    padding: 45px;
+
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    color: white;
+    padding: 45px;
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2rem;
+    padding: 1rem;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+
+    /* font-size: 16px; */
+}
+
+button {
+    background: hsl(0, 0%, 95%);
+    padding: 1rem;
+    margin: 20% 10% 20% 10%;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+    width: 70%;
+}
+
+@media (min-width: 1554px) {
+    .container {
+        display: grid;
+
+        padding: 20% 20% 15% 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 200px;
+        object-fit: contain;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1044px) {
+    .suvs p {
+        padding: 0 10px 0 0;
+    }
+}
+
+@media (min-width: 830px) {
+    .container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 400px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+    }
+}
